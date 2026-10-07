@@ -1,0 +1,49 @@
+{
+  "name": "Пудриера — гримове и списък с желания",
+  "short_name": "Пудриера",
+  "description": "Каталог с любими гримове и личен списък с желания: марка, нюанс и до колко € си готова да дадеш.",
+  "lang": "bg",
+  "dir": "ltr",
+  "id": "/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#FCFAF9",
+  "theme_color": "#B3124E",
+  "categories": [
+    "lifestyle",
+    "shopping",
+    "beauty"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

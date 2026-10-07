@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Пудриера</title>
+  <meta name="description" content="Каталог с любими гримове и личен списък с желания: марка, нюанс и до колко € си готова да дадеш." />
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+
+  <!-- PWA / installable app -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#B3124E" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Пудриера" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    /* apply the saved theme before first paint */
+    try { var t = localStorage.getItem('pudriera-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#app">Към съдържанието</a>
+
+  <header id="site-header"></header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer id="site-footer"></footer>
+
+  <!-- Bottom sheet / dialog (wish form, login) -->
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-backdrop" data-action="sheet-close"></div>
+    <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title" id="sheet-panel"></div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Scripts: plain, in order (works from file:// too) -->
+  <script src="js/data.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
